@@ -27,4 +27,4 @@ parent_folder/usage_file:
   import package_name
   pacakage_name.module_name.function_name()
   
-
+Library = collection of packages
