@@ -11,7 +11,10 @@ class TestMyModule(unittest Testcase):
     self.assertEqual(double(2),4)
     self.assertEqual(double(-3.1),-6.2)
     self.assertEqual(double(0),0)
-
+def test_add(self):
+      self.assertEqual(add(3,2), 5)
+      self.assertEqual(add(3.6,2.3), 5.9)
+      self.assertNotEqual(add("hello"," world"), "helloworld")
 if __name__ == "__main__":
   unittest.main()
   
