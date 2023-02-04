@@ -1,0 +1,30 @@
+Python module vs Package vs Library
+
+>> Module = .py file contains functions, statements, definitions, classes
+import module in scripts, notebooks
+
+parent_folder/module:
+  def func1(number):
+    pass
+  def func2(number):
+    pass
+
+#if module in same parent folder, import functions from that module
+parent_folder/usage_file:
+  from module import func1, func2
+
+>> Package = collection of modules in a dictionary, along with __init__.py file
+  parent_folder/package_name
+  package_name/
+  package_name/__init__.py : reference modules in the package
+    from . import module 1
+    from . import module 2
+  package_name/module1 
+  package_name/module2
+  
+  Package and module considered module when imported in code. Distinction only in file system
+ 
+  import package_name
+  pacakage_name.module_name.function_name()
+  
+
